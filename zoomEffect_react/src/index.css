@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+@layer components {
+  .image {
+    mask-image: url("./assets/o.png");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .text-storke {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+  }
+
+  .perspective {
+    perspective: 1200px;
+  }
+}
